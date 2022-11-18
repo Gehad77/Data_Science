@@ -1,0 +1,8 @@
+investigate the insurance dataset with the following 
+
+
+1- overview of the dataset 
+2-checking the missing data 
+3- checking the outliers
+4- genral visualizations to better understanding of the data 
+5- analyze the trends , patterns and correlations of the data 
