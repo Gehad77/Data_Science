@@ -1,0 +1,1428 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "603da3dd-dd2a-4d67-8e1b-4b1873034bc2",
+   "metadata": {},
+   "source": [
+    "# Variable"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a36c6e23-e6b9-40e7-8b82-0d5f53764e92",
+   "metadata": {},
+   "source": [
+    "### Create a variable named carname and assign the value Volvo to it."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c2b5e6f9-f3ad-4a62-99f9-405583f1a4e5",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "carname='Volvo'"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0c813171-7f74-478a-bdc7-def82a3fcf45",
+   "metadata": {},
+   "source": [
+    "### Create a variable named x and assign the value 50 to it."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "35f9ffb9-f10f-4404-90e9-9116ea5e9822",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x=50"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5e34e456-21db-4524-8507-201dd7f394c5",
+   "metadata": {},
+   "source": [
+    "### Display the sum of 5 + 10, using two variables: x and y."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "546a7268-c296-43b4-8a1b-5d0d3c0e1ae6",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x=5\n",
+    "y=10\n",
+    "print(x+y)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "faf5e015-4bf7-44b1-b9fc-cfa7e7b313b6",
+   "metadata": {},
+   "source": [
+    "### Create a variable called z, assign x + y to it, and display the result."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0a48f27f-c7e8-440a-a3a8-c352d68d83d0",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "z=x+y\n",
+    "print(z)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "46b20367-d6dd-43bd-812d-081707c8d77c",
+   "metadata": {},
+   "source": [
+    "### Remove the illegal characters in the variable name:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9aae4c3d-42ee-474f-b35c-1e6c6ea7006f",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0fbfc855-3a35-4353-827e-25acb9ef775c",
+   "metadata": {},
+   "source": [
+    "### Insert the correct syntax to assign the same value to all three variables in one code line."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a94bd700-aa8a-404d-8c86-2ba62f2a2033",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x,y,z = 5"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a4429e16-318a-4356-97ef-1f82e024851a",
+   "metadata": {},
+   "source": [
+    "### The following code example would print the data type of x, what data type would that be?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b65e4619-e2ba-4038-84ea-d55368fe2005",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x = 5\n",
+    "print(type(x))\n",
+    "int"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "8e71a3a3-98c7-468f-9ce5-deb83e463493",
+   "metadata": {},
+   "source": [
+    "### The following code example would print the data type of x, what data type would that be?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c7672850-7f68-44bb-940e-c88583acb8e6",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x = \"Hello World\"\n",
+    "print(type(x))\n",
+    "String "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "648df91e-a510-415e-8ede-fe230f42d08e",
+   "metadata": {},
+   "source": [
+    "### The following code example would print the data type of x, what data type would that be?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b6e9c46a-c5f2-4204-962e-94a858d5e8b8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x = 20.5\n",
+    "print(type(x))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5692c283-9e8e-4ed3-92f9-380ccb458c8b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "float"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "6faf1947-93d3-4c3e-8ed8-635c564b119e",
+   "metadata": {},
+   "source": [
+    "### The following code example would print the data type of x, what data type would that be?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2e276bc0-5a3f-44e3-8090-10f3e856133a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x = [\"apple\", \"banana\", \"cherry\"]\n",
+    "print(type(x))\n",
+    "list"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "af9e52fa-d76c-4650-81f1-ae8b6e86ffb0",
+   "metadata": {},
+   "source": [
+    "### The following code example would print the data type of x, what data type would that be?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "44d444f9-5e6b-4591-af82-44c0ac896781",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x = (\"apple\", \"banana\", \"cherry\")\n",
+    "print(type(x))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0a4939f0-aea1-49f5-9efd-fcc70bc875b0",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "tuple"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a6fc5db7-6053-4be5-999d-34868310328b",
+   "metadata": {},
+   "source": [
+    "### The following code example would print the data type of x, what data type would that be?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "93aceca0-52d2-4d65-bcfe-6656fdbd66d4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x = {\"name\" : \"John\", \"age\" : 36}\n",
+    "print(type(x))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "54723ed6-50d0-4d48-9c67-e8891d0415ab",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "dictionnary "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "9cf46469-b51d-497a-9232-059c7917d334",
+   "metadata": {},
+   "source": [
+    "### The following code example would print the data type of x, what data type would that be?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9170ff59-6613-4bfb-8887-4d9c0fb01597",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x = True\n",
+    "print(type(x))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ef83fae1-718f-486d-9686-7a2db64d7b26",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "bool"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c1834315-cbda-4bcf-99ba-ff6d47c4ac4f",
+   "metadata": {},
+   "source": [
+    "### Insert the correct syntax to convert x into a floating point number."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "40691bb2-39ac-4de2-8697-2d355ad1a1b9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x = 5\n",
+    "x = float(x)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0d35abfa-0948-4cb5-b085-745732237631",
+   "metadata": {},
+   "source": [
+    "### Insert the correct syntax to convert x into a integer."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8fc84b3a-9852-4568-8d60-31e8b37538fa",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x = 5.5\n",
+    "x = int(x)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a10a945f-9aaa-4e48-8d06-47b325ff904b",
+   "metadata": {},
+   "source": [
+    "### Use the len method to print the length of the string."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c4b29a77-e245-4de7-93f5-68897d5ff8d1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x = \"Hello World\"\n",
+    "print(len(x))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "55b0a95a-c81a-49cf-a1e2-d5a88d03e2ab",
+   "metadata": {},
+   "source": [
+    "### Get the first character of the string txt."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "c6cd4c33-644b-4662-8f06-1b4fca0ce3de",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "txt = \"Hello World\"\n",
+    "txt[0]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0f36ccd8-dccd-40e4-8276-e7208e1d6a4c",
+   "metadata": {},
+   "source": [
+    "### Get the characters from index 2 to index 4 (llo)."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "9abf6175-3b7d-4ec5-854e-6f9c83a38fcb",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "txt = \"Hello World\"\n",
+    "txt[2:4]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "54ab0d95-a3df-42d0-9e63-95eb19e649b9",
+   "metadata": {},
+   "source": [
+    "### Return the string without any whitespace at the beginning or the end."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "35bf2729-b6ac-4636-ab4f-48d950ae2dd8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "txt = \" Hello World \"\n",
+    "txt.strip(' ')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c64c52fa-9918-41b3-803d-48cc1dbbe03d",
+   "metadata": {},
+   "source": [
+    "### Convert the value of txt to upper case."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "68843f69-fe5e-45ac-bce7-b354e8c7e2d5",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "txt = \"Hello World\"\n",
+    "txt.upper()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "9ef9b9ed-b207-4a09-8a5b-afb160cd10f6",
+   "metadata": {},
+   "source": [
+    "### Convert the value of txt to lower case."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "51e0a2d4-089e-4314-97a8-9e0f807a0d78",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "txt = \"Hello World\"\n",
+    "txt.lower()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "e14e92ab-d6fb-4d94-bd77-eb024ed26196",
+   "metadata": {},
+   "source": [
+    "### Replace the character H with a J."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "82ac6564-d90f-49da-9adf-91e00e733555",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "txt = \"Hello World\"\n",
+    "txt[0]=\"J\""
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "71220cc9-9b56-4b86-a15f-88c65e5ac2fd",
+   "metadata": {},
+   "source": [
+    "### Using format function to print the age "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2abb0da9-4bad-4d57-88da-ce0ea4aa7acc",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "age = 36\n",
+    "txt = \"My name is John, and I am \""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4bbb2e9f-5d1e-4481-b2e1-c17818134dd1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "print(\"My name is John, and I am {} \".format(age))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c64b96dc-00df-4f95-8c8f-fe0051347e17",
+   "metadata": {},
+   "source": [
+    "### The statement below would print a Boolean value, which one?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9753dbe4-84df-4579-b687-2a0edd82969c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "print(10 > 9)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "27a8c513-b3fe-4c05-b9b1-436927c90bfc",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "True"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2865d037-6c6d-49f5-a601-20bfc5c19f29",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "print(10 == 9)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f2ab25f8-35e2-4d42-9506-ae844ace5f20",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "False"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "1013cb86-5b06-4e01-9cd5-1903d1dd0e64",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "print(10 < 9)\n",
+    "False"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "9a0e5dd4-7167-4aee-a77d-b3f275ffb134",
+   "metadata": {},
+   "source": [
+    "### Multiply 10 with 5, and print the result."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "05bc7bc3-96bf-4d85-b2c7-66f0cdb9cd25",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "print(5*10)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "54ae41e5-d151-4033-928f-bb567415d9b2",
+   "metadata": {},
+   "source": [
+    "### Divide 10 by 2, and print the result."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c3020453-0761-4c3b-86a3-bb250356673b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "print(10/2)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "81e7a18b-1990-4ac7-9ba0-79a28ac20543",
+   "metadata": {},
+   "source": [
+    "### Create a list and check if the value in this list or not"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0bbc9660-d314-4591-a8d3-20338919dd7c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x=[1,2,3,4]\n",
+    "if 4 in x:\n",
+    "    print('found')\n",
+    "else:\n",
+    "    print('not found')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "e8dc98e8-e66c-48aa-b2c5-8a637904ba9e",
+   "metadata": {},
+   "source": [
+    "### Use the correct comparison operator to check if 5 is not equal to 10."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4f4d0e14-39e9-42c6-9964-c5b91bf49df1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "print(5!=10)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f2fb4f7a-7f61-485e-b248-448b0e8c6f0d",
+   "metadata": {},
+   "source": [
+    "### Use the correct logical operator to check if at least one of two statements is True."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "105e3670-46a9-4ede-86bb-cefe0300f875",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x=1 or x!=1"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "6ee582b6-70ae-46c9-ac54-b7d12c2f820f",
+   "metadata": {},
+   "source": [
+    "### Print the second item in the fruits list."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "id": "e3b73f12-b857-43c8-8256-fd008046b5a0",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "fruits = [\"apple\", \"banana\", \"cherry\"]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ab6fab47-dd75-4f06-bd4d-5e150a847a73",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "fruits[1]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d566c724-f8f8-4101-95ab-1b41b3162304",
+   "metadata": {},
+   "source": [
+    "### Change the value from \"apple\" to \"kiwi\", in the fruits list."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "fde13c53-997c-478b-82ec-7ecacdcee827",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "fruits[0]='kiwi'"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "4ea29bd8-2335-4ff9-9509-15668f2e3b5b",
+   "metadata": {},
+   "source": [
+    "###  Use the append method to add \"orange\" to the fruits list."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "57758855-5cd6-4d2d-985a-79ea4d7b2b63",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "fruits.append('orange')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "97e2b228-758d-4576-9f84-46d89a8a5c58",
+   "metadata": {},
+   "source": [
+    "### Use the insert method to add \"lemon\" as the second item in the fruits list."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "18cd13ae-6504-472c-8dfd-8125c933b441",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "601d194b-bcec-4c4a-8b36-2e2c27f9135d",
+   "metadata": {},
+   "source": [
+    "### Use the remove method to remove \"banana\" from the fruits list."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ee8daa63-7b83-4ca0-bbf3-512e8aae8ab6",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "fruits.remove('banana')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d57a4c60-05bc-4a45-a493-0ed04e4c6ae6",
+   "metadata": {},
+   "source": [
+    "### Use negative indexing to print the last item in the list."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "7713fb23-d310-4f02-a9cc-f2933fcbfc14",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "fruits[-1]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "bad4f0bb-2689-4230-a116-8c935f4b798e",
+   "metadata": {},
+   "source": [
+    "### Use a range of indexes to print the third, fourth, and fifth item in the list."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "id": "3f40c9bd-7569-4aae-adfb-4148473db1e4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "fruits = [\"apple\", \"banana\", \"cherry\", \"orange\", \"kiwi\", \"melon\", \"mango\"]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5ea9e0b2-8b06-4de7-8750-58a00853b907",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "for i in range(2,5):\n",
+    "    print(fruits[i])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "7e193da4-23d8-4103-9cdb-7fd2ea86aef8",
+   "metadata": {},
+   "source": [
+    "### Use the correct syntax to print the number of items in the list."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "id": "1be2a046-0849-4798-86b0-309cedc6ade4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "fruits = [\"apple\", \"banana\", \"cherry\", \"orange\", \"kiwi\", \"melon\", \"mango\"]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0474c8c3-8c9f-4d18-ba57-6a759b2b29ed",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "len(fruits)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "8bd7ea28-5c20-436f-8c22-94e65739aa11",
+   "metadata": {},
+   "source": [
+    "### Use the correct syntax to print the first item in the fruits tuple."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "fab63d19-ff5f-4b07-b1c9-39a69a213a67",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "fruits = (\"apple\", \"banana\", \"cherry\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e3b26189-22a8-4227-b87e-d20f9033de32",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "fruits[0]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "7c9e1d67-6823-4db8-b832-9f7752a23965",
+   "metadata": {},
+   "source": [
+    "### Use the correct syntax to print the number of items in the fruits tuple."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "id": "83d5bc80-3231-49e1-8500-e8baae241fc0",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "fruits = (\"apple\", \"banana\", \"cherry\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "6a564f2a-5a6d-4c26-9e63-2f71a1a7808c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "len(fruits)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a9762942-ac9f-4026-834e-a6108253cf00",
+   "metadata": {},
+   "source": [
+    "### Use the add method to add \"orange\" to the fruits set."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "698e14a2-cf20-4cdc-8eac-2e974de599c7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "fruits = {\"apple\", \"banana\", \"cherry\"}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "05882b88-98c5-4015-b9f4-294bc25ac6f0",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "fruits.add('orange')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "ca1f7a4d-f1da-4a3f-92c1-1c8be39e1843",
+   "metadata": {},
+   "source": [
+    "### Use the correct method to add multiple items (more_fruits) to the fruits set."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "id": "2440b65a-b686-49a3-843b-c9cc0471fabe",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "fruits = {\"apple\", \"banana\", \"cherry\"}\n",
+    "more_fruits = [\"orange\", \"mango\", \"grapes\"]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "77b01d25-5578-4f36-be03-083e4cf1e225",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "57f18a2d-dc25-46b2-b59c-70ba30c2a863",
+   "metadata": {},
+   "source": [
+    "### Use the remove method to remove \"banana\" from the fruits set."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "14ca857c-9854-4cf4-9663-056ef842cf21",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "fruits = {\"apple\", \"banana\", \"cherry\"}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e588ac5f-755c-4103-b2ce-ec1f0d537bcb",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "fruits.remove('banana')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "215915fa-5ce8-43a2-9c8e-69031d5bb1a5",
+   "metadata": {},
+   "source": [
+    "### Use the get method to print the value of the \"model\" key of the car dictionary."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "id": "151fe2ae-6cca-4424-8452-a8025d3f8bbe",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "car ={\n",
+    "  \"brand\": \"Ford\",\n",
+    "  \"model\": \"Mustang\",\n",
+    "  \"year\": 1964\n",
+    "}"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d11d31df-64cc-45a4-aa40-13ed74660fb7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "car['model']"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c62ef6ee-c55c-47b5-8917-42dfccb63916",
+   "metadata": {},
+   "source": [
+    "### Change the \"year\" value from 1964 to 2020."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c55cc487-efb8-4593-8a8d-75812c734438",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "car['year']='2020'"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "256826b2-e415-4046-a675-dd6c93c71820",
+   "metadata": {},
+   "source": [
+    "### Add the key/value pair \"color\" : \"red\" to the car dictionary."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5c5ef545-3a3b-4ec3-8a18-b6a7b88c7bf3",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "car['pair']='red'"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "9b1812b0-d717-47cf-a36b-742ef987ffe4",
+   "metadata": {},
+   "source": [
+    "### Use the pop method to remove \"model\" from the car dictionary."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0f09fff9-7925-41b6-ba66-1364a3c244d2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "car.pop('model')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "aa97bedb-407d-4e9a-90b2-9ec5b83e56b9",
+   "metadata": {},
+   "source": [
+    "### Use the clear method to empty the car dictionary."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "7eea2c88-8896-4292-9901-4280be58b47e",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "2c109c72-f1f3-4707-ae51-a0431de35b6c",
+   "metadata": {},
+   "source": [
+    "### Print \"1\" if a is equal to b, print \"2\" if a is greater than b, otherwise print \"3\"."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ec612bd1-3f3e-47da-bd95-463444462451",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "if a==b:\n",
+    "    print(1)\n",
+    "elif a>b:\n",
+    "    print(2)\n",
+    "else:\n",
+    "    print(3)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d09e2baf-aef1-4b76-95fb-662b17c34916",
+   "metadata": {},
+   "source": [
+    "### This example misses indentations to be correct.\n",
+    "\n",
+    "Insert the missing indentation to make the code correct:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "74a4b43b-ab5a-4ff3-812b-9c45777105bf",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "if 5 > 2:\n",
+    "    print(\"Five is greater than two!\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "054de106-f548-49d5-8acd-1bdf22f21745",
+   "metadata": {},
+   "source": [
+    "### Use the correct short hand syntax to write the following conditional expression in one line:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "7688d212-947e-4bef-a4cc-f497876e8d52",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "if 5 > 2:\n",
+    "    print(\"Yes\")\n",
+    "else:\n",
+    "    print(\"No\")\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d050a1bb-fb46-4563-8304-20815f2bbe39",
+   "metadata": {},
+   "source": [
+    "### Print i as long as i is less than 6."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "6c6fa651-644c-42c9-9f79-0276c08d779e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "if i<6:\n",
+    "    print(i)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "3179e656-27a0-4091-ba20-4e00cb599ee5",
+   "metadata": {},
+   "source": [
+    "### Stop the loop if i is 3."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e40e62a4-a735-41ed-8f88-4ceca9aecd6d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "if i==3:\n",
+    "    break"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f17c6930-5de2-4c3f-85f8-1b50ff015113",
+   "metadata": {},
+   "source": [
+    "### In the loop, when i is 3, jump directly to the next iteration."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "b7936308-802b-493b-aad4-f6fdfb0f0c00",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "if i==3:\n",
+    "    continue"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c84bc758-2768-4afc-b32f-653259f4184e",
+   "metadata": {},
+   "source": [
+    "### Print a message once the condition is false."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8aa1c3e1-2fb0-4933-b6c3-295eaafb2f46",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "try:\n",
+    "    print(x)\n",
+    "except:\n",
+    "    print('error')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c46270d6-095a-4a35-9383-4eb09d9065b7",
+   "metadata": {},
+   "source": [
+    "### In the loop, when the item value is \"banana\", jump directly to the next item."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e8b275f9-8f0a-4e06-9990-716dc25afcd7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "x=['apple','lemon','banana']\n",
+    "for i in x:\n",
+    "    if i=='banana':\n",
+    "        break"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "8a8a86f1-e6a8-44ae-9350-3151f861ab21",
+   "metadata": {},
+   "source": [
+    "### Use the range function to loop through a code set 6 times."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "458cf00a-ef0e-4577-9182-010f07635dd1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "for i in range(0,6)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0225aa9a-9f5d-4c68-80ce-2db42ee8e6c1",
+   "metadata": {},
+   "source": [
+    "### Exit the loop when x is \"banana\"."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4b0e8e1d-c4fd-41a6-9805-2571fd6ff0f9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "if x=='banana':\n",
+    "    break"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "4aaa9554-31d5-4f68-bb49-6ce1a512bc64",
+   "metadata": {},
+   "source": [
+    "### Create a function named my_function."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e0c67545-091b-4074-acbb-1ac93d30518c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def my_function():"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "4a2af30a-ea48-4eed-977c-d1c7b3008d57",
+   "metadata": {},
+   "source": [
+    "### Execute a function named my_function."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4e075e0b-07fc-4e23-bcca-4f7bca22caf8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "my_function()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "6769bea8-8695-4dfa-aa46-cb93315f96c8",
+   "metadata": {},
+   "source": [
+    "### Inside a function with two parameters, print the first parameter."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "39fdfdfa-8880-485b-947b-9d46731df998",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def my_function(x,y):\n",
+    "    print(x)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c8b211d7-90c5-4bdc-8563-7d6943f1f2bd",
+   "metadata": {},
+   "source": [
+    "### Let the function return the x parameter + 5."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d0418bc7-5a7f-4b3a-8f7d-09a2a75b4cd9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def my_function(x,y):\n",
+    "    return x+5"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "70b78432-36dc-42a9-9bda-757d5ac5ad3d",
+   "metadata": {},
+   "source": [
+    "### If you do not know the number of arguments that will be passed into your function, there is a prefix you can add in the function definition, which prefix?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "4bdee11e-4fbf-455a-b34c-dc26d437be13",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def my_function(*x)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "88f3d303-a8f1-4ab6-ace2-0f63bfd86652",
+   "metadata": {},
+   "source": [
+    "### If you do not know the number of keyword arguments that will be passed into your function, there is a prefix you can add in the function definition, which prefix?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e8c1c2b7-7414-422d-bce0-8e970ba29b90",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def my_function(**x)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c9e76f27-aecd-4b55-b45e-bad1e14ed321",
+   "metadata": {},
+   "source": [
+    "### Create a lambda function that takes one parameter (a) and returns it."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "0d356a93-6fb5-4603-b108-5b82e6de6bfd",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "d746b35e-a0d7-4745-97e1-c23649114796",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "125a4b46-0132-4b78-9a3e-deb5ace46b51",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

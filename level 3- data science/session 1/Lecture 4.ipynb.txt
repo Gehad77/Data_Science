@@ -1,0 +1,251 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": "[-5, 7, -4, 2, 0, -1, 6, -1]"
+     },
+     "execution_count": 7,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "ls = [-5, 7, -4, 2, 0, -1, 6, 7]\n",
+    "for i in ls:\n",
+    "    if i < 0:\n",
+    "        negative_ = i\n",
+    "        ls[-1] = negative_\n",
+    "\n",
+    "ls"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "s=\"abbxbba\"\n",
+    "countp = 0\n",
+    "countn = -1\n",
+    "# print(s[countp],countn-1)\n",
+    "flag=True\n",
+    "for i in s:\n",
+    "    if s[countp] == s[countn]:\n",
+    "        countp = countp+1\n",
+    "        countn = countn-1\n",
+    "        pass\n",
+    "    else :\n",
+    "        flag=False\n",
+    "        break\n",
+    "\n",
+    "print(flag)\n"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2 3 4 5\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(*map(lambda x : x+1, [1,2,3,4]))"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "markdown",
+   "source": [
+    "# Can i change something in a function without writing anything in its body?"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "3\n",
+      "6\n",
+      "10\n",
+      "15\n",
+      "21\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": "21"
+     },
+     "execution_count": 10,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "def tri_recursion(k):\n",
+    "  if k > 0:\n",
+    "    result = k+tri_recursion(k-1)\n",
+    "    print(result)\n",
+    "  else:\n",
+    "    result = 0\n",
+    "  return result\n",
+    "\n",
+    "# print(\"\\n\\nRecursion Example Results\")\n",
+    "tri_recursion(6)"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "list index out of range\n"
+     ]
+    }
+   ],
+   "source": [
+    "try :\n",
+    "    l = [9,8]\n",
+    "    # print(1/0)\n",
+    "    print(l[4])\n",
+    "except Exception as e:\n",
+    "    print(e)\n"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "outputs": [],
+   "source": [
+    "file = open('file.txt', mode='w')"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "outputs": [
+    {
+     "data": {
+      "text/plain": "6"
+     },
+     "execution_count": 28,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "file.write(\"Hello \")"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "outputs": [],
+   "source": [
+    "file.close()"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2\n"
+     ]
+    }
+   ],
+   "source": [
+    "with open(\"file.txt\", mode=\"r+\" ) as f:\n",
+    "    s = f.write(\"12\")\n",
+    "    print(s)"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [],
+   "source": [
+    "from  random import shuffle"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 2
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython2",
+   "version": "2.7.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 0
+}

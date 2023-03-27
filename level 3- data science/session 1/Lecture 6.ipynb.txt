@@ -1,0 +1,382 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {
+    "collapsed": true
+   },
+   "outputs": [],
+   "source": [
+    "class Student:\n",
+    "    __name = \"A\"\n",
+    "    def __init__(self, name):\n",
+    "        self.__name = name\n",
+    "    def setname(self,name):\n",
+    "        self.__name = name\n",
+    "    def getname(self):\n",
+    "        return self.__name"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [],
+   "source": [
+    "s1 = Student(\"amr\")\n",
+    "s1.setname(\"al\")\n",
+    "s1.getname()"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [],
+   "source": [
+    "class Food:  # Base Class\n",
+    "\n",
+    "  def __init__(self, name, price):\n",
+    "    self.name = name\n",
+    "    self.price = price\n",
+    "    print(f\"{self.name} Is Created From Base Class\")\n",
+    "\n",
+    "  def eat(self):\n",
+    "    print(\"Eat Method From Base Class\")\n"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [],
+   "source": [
+    "class Apple(Food):  # Derived Class\n",
+    "\n",
+    "  def __init__(self, name, price, amount):\n",
+    "    super().__init__(name, price)\n",
+    "    self.amount = amount\n",
+    "    print(f\"{self.name} Is Created From Derived Class And Price Is {self.price} And Amount Is {self.amount}\")\n",
+    "\n",
+    "  def get_from_tree(self):\n",
+    "      print(\"Get From Tree From Derived Class\")"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [],
+   "source": [
+    "food_two = Apple(\"Pizza\", 150, 500)\n",
+    "food_two.eat()\n",
+    "food_two.get_from_tree()"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [],
+   "source": [
+    "class Father:\n",
+    "    def __init__(self, father_name, father_age):\n",
+    "        self.father_name = father_name\n",
+    "        self.father_age = father_age\n",
+    "class Child(Father):\n",
+    "    def __init__(self, father_name, child_name, child_age, father_age):\n",
+    "        super().__init__(father_name, father_age)\n",
+    "        self.child_name = child_name\n",
+    "        self.Child_age = child_age\n",
+    "    def getfullname(self):\n",
+    "        print(f\"Full Name : {self.child_name} {self.father_name} \\n Age : Child : {self.Child_age} \\n       Dad :{self.father_age} \")\n",
+    "\n",
+    "c1 = Child(father_age= 52, child_name=\"Ali\", child_age=5, father_name = \"Ahmed\")\n",
+    "c1.getfullname()"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [],
+   "source": [
+    "# Python program to demonstrate\n",
+    "# single inheritance\n",
+    "\n",
+    "# Base class\n",
+    "class Parent:\n",
+    "\tdef func1(self):\n",
+    "\t\tprint(\"This function is in parent class.\")\n",
+    "\n",
+    "# Derived class\n",
+    "\n",
+    "\n",
+    "class Child(Parent):\n",
+    "\tdef func2(self):\n",
+    "\t\tprint(\"This function is in child class.\")\n",
+    "\n",
+    "\n",
+    "# Driver's code\n",
+    "object = Child()\n",
+    "object.func1()\n",
+    "object.func2()"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [],
+   "source": [
+    "class Father:\n",
+    "    father_name = \"\"\n",
+    "    def father(self, father_name):\n",
+    "        self.father_name = father_name\n",
+    "\n",
+    "    # print(True) # Inherit Check\n",
+    "\n",
+    "class Mother:\n",
+    "    mother_name = \"\"\n",
+    "    def mother(self, mother_name):\n",
+    "        self.mother_name = mother_name\n",
+    "\n",
+    "    # print(True) # Inherit Check\n",
+    "\n",
+    "class Child(Father, Mother):\n",
+    "    child_name = \"\"\n",
+    "    def child_info(self, child_name):\n",
+    "        self.child_name = child_name\n",
+    "        print(f\"The Child's Name is : {self.child_name} {self.father_name} and his mother is {self.mother_name}\")\n",
+    "\n",
+    "c= Child()\n",
+    "c.father(\"Mohamed\")\n",
+    "c.mother(\"Sara\")\n",
+    "c.child_info(\"Ali\")\n",
+    "\n",
+    "\n"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [],
+   "source": [
+    "class First:\n",
+    "    def check1(self):\n",
+    "        return True\n",
+    "\n",
+    "class Second(First):\n",
+    "    def check2(self):\n",
+    "        return True\n",
+    "\n",
+    "class Third(Second):\n",
+    "    def check3(self):\n",
+    "        return True"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [],
+   "source": [
+    "c2 = Third()\n",
+    "c2.check1(),c2.check2(),c2.check3()"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [],
+   "source": [
+    "class Parent:\n",
+    "    def main(self):\n",
+    "        return \"This The Main Class\"\n",
+    "\n",
+    "class Child(Parent):\n",
+    "    def func1(self):\n",
+    "        return \"This The Sub Class\"\n",
+    "\n",
+    "class Child2(Parent):\n",
+    "   def func2(self):\n",
+    "        return \"This The Sub Class 2\"\n",
+    "\n",
+    "c1 = Child()\n",
+    "c2 = Child2()\n",
+    "c1.main(),c1.func1(),c2.main(),c2.func2()\n",
+    "\n"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [],
+   "source": [
+    "class Animal:\n",
+    "    def sound(self):\n",
+    "        pass\n",
+    "\n",
+    "class Cat(Animal):\n",
+    "    def sound(self):\n",
+    "        print(\"Meoww\")\n",
+    "\n",
+    "class Dog(Animal):\n",
+    "    def sound(self):\n",
+    "        print(\"Wooof\")"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [],
+   "source": [
+    "cat = Cat()\n",
+    "dog = Dog()\n",
+    "dog.sound(),cat.sound()\n"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 181,
+   "outputs": [],
+   "source": [
+    "class Rectangle:\n",
+    "    height = 0\n",
+    "    width = 0\n",
+    "\n",
+    "    def area(self):\n",
+    "        area_calc = self.height * self.width\n",
+    "        return area_calc\n",
+    "\n",
+    "    def perimeter(self):\n",
+    "        perimeter_calc = 2 * (self.height + self.width)\n",
+    "        return perimeter_calc\n",
+    "\n",
+    "    def set_height(self, height):\n",
+    "        self.height = height\n",
+    "\n",
+    "    def set_width(self, width):\n",
+    "        self.width = width"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 183,
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Area = 75\n",
+      "Perimeter = 40\n"
+     ]
+    }
+   ],
+   "source": [
+    "height_usr = int(input(\"Enter Height : \"))\n",
+    "width_usr = int(input(\"Enter Width : \"))\n",
+    "\n",
+    "rec = Rectangle()\n",
+    "rec.set_width(width_usr)\n",
+    "rec.set_height(height_usr)\n",
+    "area_of_rectangle = rec.area()\n",
+    "perimeter_of_rectangle = rec.perimeter()\n",
+    "\n",
+    "if height_usr == width_usr:\n",
+    "    print(\"That's a Square \")\n",
+    "\n",
+    "else:\n",
+    "    print(f\"Area = {area_of_rectangle}\")\n",
+    "    print(f\"Perimeter = {perimeter_of_rectangle}\")\n"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "outputs": [
+    {
+     "data": {
+      "text/plain": "[4, 6, 5, 3, 2, 1]"
+     },
+     "execution_count": 1,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "ls = [1,2,3,5,6,4]\n",
+    "ls.reverse()\n",
+    "print(ls)"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [],
+   "source": [],
+   "metadata": {
+    "collapsed": false
+   }
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 2
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython2",
+   "version": "2.7.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 0
+}

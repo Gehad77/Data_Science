@@ -1,0 +1,269 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [],
+   "source": [
+    "X = 1\n",
+    "Z = 1\n",
+    "print(hex(id(X)), hex(id(Z)))\n",
+    "print(id(X), id(Z))"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [],
+   "source": [
+    "help('keywords')\n",
+    "import keyword\n",
+    "keyword.kwlist\n"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [],
+   "source": [
+    "x = 15.25\n",
+    "x = int(x)\n",
+    "x"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [],
+   "source": [
+    "name = 'Ahmed mohamed'\n",
+    "nam = 'ahmedmohamed'\n",
+    "hex(id(name)), hex(id(nam))\n",
+    "name.lower()"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [],
+   "source": [
+    "s1 = \"Welcome in Amit\"\n",
+    "s2 = s1[-8:-5]\n",
+    "s2"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [],
+   "source": [
+    "s3 = \"0123456789\"\n",
+    "s4 = s3[-2:-6:-2]\n",
+    "s4"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [],
+   "source": [
+    "s5= \"HM\"\n",
+    "s6= \"H M\"\n",
+    "s5 == s6, s5 is s6"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [],
+   "source": [
+    "#a, b, c = 1, 2, 3\n",
+    "a = 1 ; b = 2 ; c = 3;\n",
+    "a > b and c > a , a < b or a < c , a == b , a != b, a & b"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [],
+   "source": [
+    "l1 = [5, 3, 7]\n",
+    "l2 = l1\n",
+    "l2[2] = 8\n",
+    "\n",
+    "l1,l2"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [],
+   "source": [
+    "l1 = [5, 3, 7]\n",
+    "l2 = l1.copy()\n",
+    "l2[2] = 9\n",
+    "l1, l2"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [],
+   "source": [
+    "import copy\n",
+    "lis = [5, 2, 8, [12, 5, 7]]\n",
+    "lis2 = copy.deepcopy(lis)\n",
+    "lis[3][1] = 0\n",
+    "lis, lis2"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [],
+   "source": [
+    "l12 = [15,0,2]\n",
+    "l12.insert(0,3)\n",
+    "l12.clear()\n",
+    "l12"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [],
+   "source": [
+    "t1 = (1)\n",
+    "t2 = (1,)\n",
+    "type(t1),type(t2)"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [],
+   "source": [
+    "set1 = {1,2,3,4,5,6,7,8,9}\n",
+    "set2 = {1,3,5,7,9}\n",
+    "# - union\n",
+    "set1 | set2\n",
+    "# - intersect\n",
+    "set1 & set2"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [],
+   "source": [
+    "dic = {\"name\" : 'ahmed',\n",
+    "       \"age\" : '25'}\n",
+    "dic.values()\n",
+    "\n",
+    "dic[\"name\"]"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "ho\n"
+     ]
+    }
+   ],
+   "source": [
+    "lis = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\n",
+    "while True:\n",
+    "       if 12 == 12 and lis[0] < lis[-1]:\n",
+    "              print(\"ho\")\n",
+    "              while True :\n",
+    "                     for i in lis :\n",
+    "                            lis\n",
+    "                            lis.append(12)\n",
+    "                            lis"
+   ],
+   "metadata": {
+    "collapsed": false
+   }
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "outputs": [],
+   "source": [],
+   "metadata": {
+    "collapsed": false
+   }
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 2
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython2",
+   "version": "2.7.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 0
+}
